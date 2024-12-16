@@ -1,0 +1,36 @@
+.footer {
+  background-color: #004d40; 
+  position: fixed;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  padding: 15px 0;  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  text-align: center;  
+  color: white;  
+  font-size: 0.9rem;  
+  width: 100vw;  
+  margin: 0;  
+  box-sizing: border-box;  
+  z-index: 1000;  
+}
+
+.footer p {
+  margin: 0;  
+  padding: 0;  
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .footer {
+    font-size: 0.85rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    font-size: 0.8rem;  
+  }
+}

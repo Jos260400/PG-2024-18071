@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "emailjs-com": "^3.2.0",
+    "firebase": "^10.12.2",
+    "react-confetti": "^6.1.0",
+    "react-firebase-hooks": "^5.1.1",
+    "vite": "^5.4.8"
+  }
+}

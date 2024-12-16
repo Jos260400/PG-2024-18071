@@ -1,0 +1,172 @@
+/* Estilos */
+
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card .form-actions {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #004d40;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.card .form-actions a {
+    color: #b2dfdb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card .form-actions a:hover {
+    text-decoration: underline;
+}
+
+
+#data-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+#data-list li {
+    background-color: #e0f2f1;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px; 
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+#data-list li:hover {
+    transform: scale(1.05);
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    color: #004d40;
+    margin-bottom: 20px;
+}
+
+
+.btn {
+    background-color: #004d40;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #00796b;
+}
+
+
+.spacer {
+    height: 100px;
+}
+
+a {
+    color: #004d40;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    #data-list li {
+        width: 100%; 
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .card .form-actions {
+        margin-top: 15px;
+        padding: 10px;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #data-list li {
+        width: 45%; 
+        margin: 10px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .btn {
+        padding: 9px 18px;
+    }
+
+    .card .form-actions {
+        margin-top: 15px;
+        padding: 12px;
+    }
+}
+
+
+@media (min-width: 901px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    #data-list li {
+        width: 250px; 
+        margin: 10px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
+
+    .card .form-actions {
+        margin-top: 20px;
+        padding: 15px;
+    }
+}

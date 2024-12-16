@@ -1,0 +1,180 @@
+<!-- Mostramos el email, huella y fecha de cada cuestionario seleccionado  -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultados</title>
+
+  <!-- Importamos los estilos -->
+
+  <link rel="stylesheet" href="./Share.css">
+  <style>
+
+  
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #b2dfdb;
+      margin: 0;
+      padding: 20px;
+      color: #004d40;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    #data-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #data-list li {
+      margin: 10px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: white;
+      box-sizing: border-box;
+    }
+
+    @media (max-width: 900px) {
+      #data-list li {
+        width: calc(45% - 20px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      #data-list li {
+        width: 100%; 
+      }
+    }
+
+    .spacer {
+      height: 200px;
+    }
+  </style>
+
+ <!-- Instrucciones necesarias para los datos -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js";
+    import { getFirestore, query, where, getDocs, collection } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js";
+
+
+    
+    const firebaseConfig = {
+      apiKey: "AIzaSyB6Bd8FOTEAW8rAUfcNXKbVpew38wIu3CU",
+      authDomain: "huella-de-carbono-dacdb.firebaseapp.com",
+      projectId: "huella-de-carbono-dacdb",
+      storageBucket: "huella-de-carbono-dacdb.appspot.com",
+      messagingSenderId: "486465875883",
+      appId: "1:486465875883:web:86b779435e4fe85894ecee",
+      measurementId: "G-1HB86HFLFX"
+    };
+
+    
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+
+    const fetchData = async () => {
+      try {
+        onAuthStateChanged(auth, async (user) => {
+          if (user) {
+            const urlParams = new URLSearchParams(window.location.search);
+            const questionnaireId = urlParams.get('questionnaireId');
+            console.log('Questionnaire ID:', questionnaireId);
+            const q = query(
+              collection(db, 'respuestas'),
+              where('email', '==', user.email),
+              where('totalDocId', '==', questionnaireId)
+            );
+            const querySnapshot = await getDocs(q);
+
+            if (querySnapshot.empty) {
+              console.log('No matching documents.');
+              return;
+            }
+
+            const dataList = querySnapshot.docs.map(doc => ({
+              id: doc.id,
+              ...doc.data()
+            }));
+
+            dataList.sort((a, b) => new Date(a.fechaHora) - new Date(b.fechaHora));
+
+            const list = document.getElementById('data-list');
+            list.innerHTML = ''; 
+            dataList.forEach(item => {
+              const listItem = document.createElement('li');
+              listItem.innerHTML = `
+                <p style="margin: 10px 0;"><strong>Email:</strong> ${item.email}</p>
+                <p style="margin: 10px 0;"><strong>Fecha y Hora:</strong> ${item.fechaHora}</p>
+                <p style="margin: 10px 0;"><strong>Huella de Carbono:</strong> ${item.huella}</p>
+              `;
+              list.appendChild(listItem);
+            });
+
+            const uniqueId = Date.now(); 
+            const newUrl = `${window.location.origin}/resultados/${uniqueId}`;
+            window.history.pushState({}, '', newUrl); 
+
+          } else {
+            console.log('No user is signed in');
+          }
+        });
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    const downloadPDF = () => {
+      const list = document.getElementById('data-list');
+
+      html2canvas(list).then(canvas => {
+        const imgData = canvas.toDataURL('image/png');
+        const pdf = new jsPDF();
+        const imgProps = pdf.getImageProperties(imgData);
+        const pdfWidth = pdf.internal.pageSize.getWidth();
+        const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+
+        pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
+        pdf.save('resultados.pdf');
+      }).catch(error => {
+        console.error('Error generating PDF:', error);
+      });
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+     
+      fetchData();
+
+      const downloadButton = document.getElementById('download-button');
+      downloadButton.addEventListener('click', downloadPDF);
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.0.0-rc.7/html2canvas.min.js"></script>
+</head>
+<body>
+  <div>
+    <h1>Resultados</h1>
+    
+  </div>
+
+  <ul id="data-list"></ul>
+
+  <div class="spacer"></div>
+
+  <div>
+    <p>Intenta calcular tu huella de carbono aquí: https://hdc-amv5.vercel.app/</p>
+  </div>
+
+</body>
+</html>

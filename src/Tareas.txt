@@ -1,0 +1,272 @@
+Semana 1 ( 15-04-2024 al 22-04-2024)
+
+Investigación para el cuestionario de la huella de carbono.
+Investigación para el stack de tecnologías, ventajas y desventajas de cada una.
+Retroalimentación por parte del departamento de biología, departamento de defensores de la naturaleza y estudiantes para el cuestionario.
+
+Semana 2 ( 22-04-2024 al 29-04-2024)
+
+Investigación para el cuestionario de la huella de carbono.
+Investigación para el stack de tecnologías, ventajas y desventajas de cada una.
+Retroalimentación por parte del departamento de biología, departamento de defensores de la naturaleza y estudiantes para el cuestionario.
+
+Semana 3 ( 29-04-2024 al 06-05-2024)
+
+Protocolo. 
+
+Semana 4 ( 06-05-2024 al 13-05-2024)
+
+Protocolo.
+
+Semana 5 ( 13-05-2024 al 20-05-2024)
+
+Protocolo. 
+
+Semana 6 ( 20-05-2024 al 27-05-2024)
+
+Protocolo. 
+
+Semana 7( 27-05-2024 al 03-06-2024)
+
+Protocolo.
+Diseño de la base de datos para la aplicacion web.
+
+Semana 8 ( 03-06-2024 al 10-06-2024)
+
+Protocolo.
+Diseño de la base de datos para la aplicacion web.
+Uso del stack de tecnologías.
+
+Semana 9 ( 10-06-2024 al 17-06-2024)
+
+Creacion de la pagina y diseño del Menu.
+Creacion de la pagina y diseño del Login.
+Creacion de la pagina y diseño del Register.
+
+Semana 10 ( 17-06-2024 al 24-06-2024)
+
+Implementacion de botones para el menu:
+    Labels de donde iran las estadisticas asi como cuentas creadas, cuestionarios realizados, cuestionarios activos y huella de carbono total.
+    Comboboxes para seleccionar departamento, municipio y zona en la region de guatemala.
+    Header y Footer.
+
+Semana 11 ( 24-06-2024 al 01-07-2024)
+
+Logica para guardar los datos en la base de datos, estructura del programa.
+
+Semana 12 ( 01-07-2024 al 08-07-2024)
+
+Firebase
+    Creación de la base de datos.
+    Guardar a los usuarios con sus respectivos datos.
+Cuestionario
+    Colocar todas las preguntas y dividirlas por secciones.
+    Crear los botones de anterior, siguiente, mostrar u ocultar grafica y guardar cuestionario.
+Login   
+    Reconocer los usuarios que estan registrados y los que no.
+Inicio
+    Boton de Inicio que pueda redirigir en cada una de las paginas hacia al menu.
+
+Semana 13 ( 08-07-2024 al 15-07-2024)
+
+Guardar de que departamento, municipio y zona es cada usuario en la base de datos.
+Redactar informe.
+Comboboxes para las opciones de los cuestionarios.
+Mas espaciado entre los botones del menu, no tan juntos.
+
+Semana 14 ( 15-07-2024 al 22-07-2024)
+
+Papeleria incluyendo: Titulo, Protocolo, Dpi, carta asesor y estudiante.
+Verificar las opciones de cada pregunta del cuestionario con sus posibles respuestas.
+Redactar informe.
+
+Semana 15 ( 22-07-2024 al 29-07-2024)
+
+Verificar las opciones de cada pregunta del cuestionario con sus posibles respuestas.
+Calcular la huella de carbono para cada usuario, revisando detenidamente las formulas.
+Redactar informe.
+
+Semana 16 ( 29-07-2024 al 05-08-2024)
+
+Llegar a ver la sumatoria de huella de carbono para cada seccion.
+Redactar informe.
+Poder mostrar el contador de cuestionarios activos y cuestionarios realizados. 
+
+
+Semana 17 ( 05-08-2024 al 12-08-2024)
+
+Guardar la fecha y hora con su valor de huella de carbono.
+Poder ver todas huellas de carbono en mi cuenta. 
+Poder cerrar sesión en mi cuenta.
+Poder mostrar la sumatoria de todas las huellas de carbono. 
+Aplicar gamify.
+
+Un boton para ver los cuestionarios realizados de cada usuario
+    - Debe  mostrar las respuestas de cada cuestionario que ha realizado como un informe de resultados.  
+    - Al entrar a la pagina muestra un boton de ver cuestionarios para cada cuestionario hecho.
+    - Solo el usuario puede ver sus cuestionarios realizados.
+    - Ver grafica de tiempo de todos los cuestionarios.
+
+Adquirir mas retroalimentacion:
+- Expertos.
+- Estudiantes.
+- Catedraticos.
+
+Semana 17 ( 12-08-2024 al 19-08-2024)
+
+Cambiar la paleta de colores.
+Cambiar los tamaños de las graficas.
+Continuar con la Retroalimentacion y el informe.
+Colocar como ganarse los primeros badges.
+Centrar todas las graficas.
+
+Semana 17 ( 19-08-2024 al 26-08-2024)
+
+Realizar una muestra significativa para usuarios.
+Poder ver las insignias que llevas y las que faltan. 
+
+Semana 18 ( 26-08-2024 al 02-09-2024)
+
+Colocar el Email abajo de EcoHuella.
+Darle click en Nueva Evaluacion para volver al comienzo.
+Colocar una animacion y titulo al finalizar el cuestionario.
+Ponerle valores o numeros a las graficas de pie.
+Poner la fila de Activo Si en la tabla de algun color diferente.
+Poner las reglas para las insignias.
+Poder ver tus resultados asi como la pregunta con su debida respuesta al darle click en ver.
+Poder ver tus resultados de graficas al darle click en documento.
+Poder darle compartir tu huella de carbono.
+
+Semana 19 ( 02-09-2024 al 09-09-2024)
+
+Responsive.
+Redactar informe.
+
+Semana 19 ( 09-09-2024 al 16-09-2024)
+
+Responsive.
+Redactar informe.
+Reevaluar el cuestionario.
+Mostrar los valores mas importantes mas grandes.
+
+Semana 19 ( 16-09-2024 al 23-09-2024)
+
+Redactar informe.
+Agregar nuevas secciones para el cuestionario.
+Mejorar el diseño de la pagina.
+Arreglar el Share de HTML.
+Poner la seccion de Informacion y FAQ separado, una a la izquierda y otro a la derecha y con sus debidas preguntas.
+Modificar la base de datos para guardar los nuevos valores.
+
+
+Semana 20 ( 23-09-2024 al 30-09-2024)
+
+Agregarle URLS a las paginas.
+Agregar nueva y ultima seccion al cuestionario y programa.
+Componer para que salga la fila seleccionada del FaEye, FaFileAlt y FaShareAlt.
+Que hacer para que la persona se motive a usarla.
+
+Semana 21 ( 30-09-2024 al 06-10-2024)
+
+Subir la pagina a internet y que sea publica para todos.
+Mejorar estetica y orden de las cosas.
+
+Semana 21 ( 07-10-2024 al 14-10-2024)
+
+Correcciones:
+
+        1.
+        a. no hace nada, no muestra nada solo 1 menú.
+        2.
+        a. El tiempo de carga de la huella es muy grande, hay que poner un loader
+        que indique que se está calculado. Da la impresión que no funciona.
+        b. La foto esta horrible.
+        c. El tamaño de la letra de “Huella de carbono” te he pedido varias veces
+        que lo arregles porque está muy grande y demasiado separado del
+        indicador.
+        d. En los filtros no sale la opción de todos.
+        e. Seleccione departamento y municipalidad random y me dice 0. En ese
+        caso que no hay datos me debería decir no hay datos para calcular la
+        huella.
+        3.
+        a. Si no hay cuestionarios hechos, debería de decir que no hay
+        cuestionarios hechos. Ahora muestra una gráfica y una tabla vacía.
+        4. 
+        a. El margen de los lados es muy grande, no se entiende lo de la barra.
+        b. Las insignias deberían salir en horizontal y no en vertical.
+        5. 
+        a. Deberían de ser 2 columnas en vez de una sola.
+        b. El ícono se ve alineado raro, no se ve bien.
+        6. 
+        a. No me permite modificar ninguno de los datos.
+        7. 
+        a. Quitar la tarjeta inicial de la fecha, no sirve para nada.
+        b. El botón de anterior no tiene porque salir si es la primera página.
+        c. El botón de siguiente debería decir “Iniciar” para la primera pantalla.
+        d. El cuestionario tiene errores, si selecciono que no tengo transporte se
+        cambia a la siguiente sección, pero si regreso puedo ver las preguntas.
+        Se deben esconder las preguntas que no aplican. Hay preguntas como la
+        del transmetro que si importa aunque no tengan transporte propio.
+        e. Las preguntas de distancia no deberían de ser un combo box, es
+        demasiado molesto buscar. Deben ser inputs de int validados.
+        f. El cuestionario no debe de moverse entre secciones, solo esconder las
+        preguntas que no son relevantes. Si respondo mal una de una vez me
+        cambia de página. La única forma de cambiar de página es apachando el
+        botón de siguiente.
+        g. Agregar íconos de cada sección.
+        h. No debería de haber un botón de guardar, solo uno de finalizar que debe
+        ser el mismo que dice siguiente pero que en la última sección diga
+        “Finalizar”
+        i. No debería de pasar a la siguinte sección a menos que haya terminado la
+        anterior.
+        j. El cuestionario no está validado. (ahora que cambies los inputs es
+        necesario validar)
+        k. Ese botón de mostrar/ocultar resultados no debe de existir. El único lugar
+        para ver resultados debe ser la sección de resultados. Ese botón en todo
+        caso debe llevar al detalle de cada evaluación.
+        8. 
+        a. Se ve demasiado desordenado.
+        b. No está ordenado por sección.
+        c. Las respuestas que no se contestaron porque no aplican no deben de
+        salir.
+        d. No hay breadcrumb para regresar.
+        9. 
+        a. Las gráficas se ven mal.
+        b. Deben estar al lado.
+        c. Validar que esten bien los datos ya que no muestran nada, dan la
+        impresión que no funcionan,
+        10. 
+        a. El diseño de esta página está muy deficiente. Esto es lo que vamos
+        compartir por lo que debe ser llamativo.
+        b. Ese pdf igual, no llama la atención para nada.
+        c. No veo por ningún lado la opción para compartir en redes.
+        Observaciones generales:
+        • Quita eso de —cabecera departamental— de todos lados.
+        • Falta el logo de la aplicación.
+        • El margen de las páginas internas es demasiado angosto.
+
+Semana 21 ( 14-10-2024 al 21-10-2024)
+
+- Realizar pruebas con los usuarios al usar la App, uso de Trobii.
+- Atraer mas a los usuarios al momento de usar gamify.
+- Cambiar el boton de Finalizar por Guardar Cuestionario.
+- Colocar los botones de Anterior, Siguiente y Guardar Cuestionario abajo de las preguntas.
+- Arreglar el Home para que no tenga tanto espacio y scroll.
+- Quitar la opcion de Seleccionar Departamento, Seleccionar Municipio y Seleccionar Zona.
+- Colocar un valor numerico, un int en vez de seleccionar el numero.
+- Arreglar el Footer y Header para verlo mejor tanto en laptop como en el telefono y otro dispositivo.
+- Continuar con el informe.
+- Colocarle una opcion de que si la opcion es Si entonces que se desplieguen las preguntas y si es No entonces que no se desplieguen.
+- Colocar en la parte de insignias las que hacen falta con su numero de insignia y tambien que No esta disponible.
+
+Semana 22 ( 21-10-2024 al 03-11-2024)
+
+- Informe
+- Pruebas con el deployment
+- Ultimas pruebas a la app.
+
+Semana 23 ( 03-11-2024 al 27-11-2024)
+
+- Presentación Trabajo de Graduación
+
+
